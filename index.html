@@ -23,15 +23,15 @@
  */
 
 var map;
-var src = 'https://developers.google.com/maps/tutorials/kml/westcampus.kml';
+var src = 'Sports.kml';
 
 /**
  * Initializes the map and calls the function that creates polylines.
  */
 function initialize() {
   map = new google.maps.Map(document.getElementById('map_canvas'), {
-    center: new google.maps.LatLng(-19.257753, 146.823688),
-    zoom: 2,
+    center: new google.maps.LatLng(40,-97),
+    zoom: 4,
     mapTypeId: google.maps.MapTypeId.TERRAIN
   });
   loadKmlLayer(src, map);
