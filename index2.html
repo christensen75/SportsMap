@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,33 +19,225 @@
     </style>
   </head>
   <body>
-<script src="https://maps.googleapis.com/maps/api/jskey=AIzaSyDUZggZEn9MOpftH_WjCsrH-rU1El2gJ0A"></script>
-<script>
-var map;
-var style = require('https://christensen75.github.io/SportsMap/style.json');
-var layers = [];
-      layers [0] = new google.maps.KmlLayer("https://christensen75.github.io/SportsMap/hockey.kml",{preserveViewport: false, map: map});
-      layers [1] = new google.maps.KmlLayer("https://christensen75.github.io/SportsMap/soccer.kml",{preserveViewport: false, map: map});
-      layers [2] = new google.maps.KmlLayer("https://christensen75.github.io/SportsMap/football.kml",{preserveViewport: false, map: map});
-      layers [3] = new google.maps.KmlLayer("https://christensen75.github.io/SportsMap/basketball.kml",{preserveViewport: false, map: map});
-      layers [4] = new google.maps.KmlLayer("https://christensen75.github.io/SportsMap/baseball.kml",{preserveViewport: false, map: map});
-
-function initialize() {
-  map = new google.maps.Map(document.getElementById('map'), {
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
           center: {lat: 40, lng: -97},
-          disableDefaultUI: true
+          styles: [
+    {
+        "featureType": "all",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "saturation": 36
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#0f252e"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    }
+]
         });
-   loadKmlLayer(layers, map);
-   map.set('styles', style);
-}
 
-function loadKmlLayer(layers, map) {
-  var kmlLayer = new google.maps.KmlLayer(layers, {preserveViewport: false,map: map});
-}
-
-      google.maps.event.addDomListener(window, 'load', initialize);
-
+        var georssLayer = new google.maps.KmlLayer({
+          url: 'https://christensen75.github.io/SportsMap/all5.kml'
+        });
+        georssLayer.setMap(map);
+      }
+    </script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUZggZEn9MOpftH_WjCsrH-rU1El2gJ0A&callback=initMap">
     </script>
   </body>
 </html>
