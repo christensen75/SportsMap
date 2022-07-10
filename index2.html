@@ -20,12 +20,11 @@
     </style>
   </head>
   <body>
-<script src="https://maps.googleapis.com/maps/api/jskey=AIzaSyDUZggZEn9MOpftH_WjCsrH-rU1El2gJ0A&callback=initialize"></script>
+<script src="https://maps.googleapis.com/maps/api/jskey=AIzaSyDUZggZEn9MOpftH_WjCsrH-rU1El2gJ0A"></script>
 <script>
 var map;
 var style = require('https://christensen75.github.io/SportsMap/style.json');
 var layers = [];
-        var layers = [];
       layers [0] = new google.maps.KmlLayer("https://christensen75.github.io/SportsMap/hockey.kml",{preserveViewport: false});
       layers [1] = new google.maps.KmlLayer("https://christensen75.github.io/SportsMap/soccer.kml",{preserveViewport: false});
       layers [2] = new google.maps.KmlLayer("https://christensen75.github.io/SportsMap/football.kml",{preserveViewport: false});
