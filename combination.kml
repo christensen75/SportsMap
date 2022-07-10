@@ -1,0 +1,35 @@
+<kml>
+  <Document>
+    
+    <NetworkLink>
+    <Link>
+     <href>baseball.kml</href>
+    </Link>
+   </NetworkLink>
+    
+    <NetworkLink>
+    <Link>
+     <href>basketball.kml</href>
+    </Link>
+   </NetworkLink>
+
+   <NetworkLink>
+    <Link>
+     <href>football.kml</href>
+    </Link>
+   </NetworkLink>
+    
+    <NetworkLink>
+    <Link>
+     <href>soccer.kml</href>
+    </Link>
+   </NetworkLink>
+    
+    <NetworkLink>
+    <Link>
+     <href>hockey.kml</href>
+    </Link>
+   </NetworkLink>
+
+  </Document>
+</kml>
