@@ -2,17 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Major League Sports Markets</title>
+    <title>Major League Sports Markets 1</title>
     <style>
-#map {
-  height: 1000px;
-}
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+      #map_canvas {
+        width: 1920px;
+        height: 1080px;
+      }
     </style>
 
 </head>
@@ -21,8 +16,10 @@ body {
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUZggZEn9MOpftH_WjCsrH-rU1El2gJ0A"></script>
 <script>
 
+
 var map;
-var src = '/Sports.kml';
+var src = 'Sports.kml';
+
 
 function initialize() {
   map = new google.maps.Map(document.getElementById('map_canvas'), {
@@ -32,11 +29,18 @@ function initialize() {
   });
   loadKmlLayer(src, map);
 }
-  const ctaLayer = new google.maps.KmlLayer({
-    url: "/Sports.kml",
-    map: map,
+
+function loadKmlLayer(src, map) {
+  var kmlLayer = new google.maps.KmlLayer(src, {
+    suppressInfoWindows: true,
+    preserveViewport: false,
+    map: map
   });
-}
+  google.maps.event.addListener(kmlLayer, 'click', function(event) {
+    var content = event.featureData.infoWindowHtml;
+    var testimonial = document.getElementById('capture');
+    testimonial.innerHTML = content;
+  });
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
