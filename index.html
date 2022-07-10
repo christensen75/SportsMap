@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Major League Sports Markets 1</title>
+    <title>Major League Sports Markets 2</title>
     <style>
       #map_canvas {
         width: 1920px;
@@ -18,7 +18,7 @@
 
 
 var map;
-var src = 'Sports.kml';
+var src = '/sports.kml';
 
 
 function initialize() {
@@ -31,16 +31,11 @@ function initialize() {
 }
 
 function loadKmlLayer(src, map) {
-  var kmlLayer = new google.maps.KmlLayer(src, {
-    suppressInfoWindows: true,
-    preserveViewport: false,
-    map: map
-  });
-  google.maps.event.addListener(kmlLayer, 'click', function(event) {
-    var content = event.featureData.infoWindowHtml;
-    var testimonial = document.getElementById('capture');
-    testimonial.innerHTML = content;
-  });
+let kml = new google.maps.KmlLayer({
+  url: src,
+  preserveViewport: true
+});
+kml.setMap( map );
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
