@@ -21,14 +21,15 @@
   <body>
     <div id="map"></div>
     <script>
+      
+      var style1 = require('https://christensen75.github.io/SportsMap/style.json');
+      
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
           center: {lat: 40, lng: -97},
           styles: style1
         });
-        
-        var style1 = require('https://christensen75.github.io/SportsMap/style.json');
 
         var georssLayer = new google.maps.KmlLayer({
           url: 'https://christensen75.github.io/SportsMap/all5.kml'
