@@ -2,42 +2,42 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>basketball</name>
-    <Style id="poly-F9A825-7101-0-normal">
+    <Style id="poly-F9A825-5101-255-normal">
       <LineStyle>
         <color>ff25a8f9</color>
-        <width>7.101</width>
+        <width>5.101</width>
       </LineStyle>
       <PolyStyle>
-        <color>0025a8f9</color>
+        <color>ff25a8f9</color>
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <Style id="poly-F9A825-7101-0-highlight">
+    <Style id="poly-F9A825-5101-255-highlight">
       <LineStyle>
         <color>ff25a8f9</color>
-        <width>10.6515</width>
+        <width>7.6515</width>
       </LineStyle>
       <PolyStyle>
-        <color>0025a8f9</color>
+        <color>ff25a8f9</color>
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <StyleMap id="poly-F9A825-7101-0">
+    <StyleMap id="poly-F9A825-5101-255">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-F9A825-7101-0-normal</styleUrl>
+        <styleUrl>#poly-F9A825-5101-255-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-F9A825-7101-0-highlight</styleUrl>
+        <styleUrl>#poly-F9A825-5101-255-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Placemark>
       <name>Basketball</name>
       <description><![CDATA[description: <br>fillColor: #F57F17<br>stroke: #F57F17<br>color: #F57F17<br>weight: 2<br>opacity: 0.8<br>fillOpacity: 0.35]]></description>
-      <styleUrl>#poly-F9A825-7101-0</styleUrl>
+      <styleUrl>#poly-F9A825-5101-255</styleUrl>
       <ExtendedData>
         <Data name="description">
           <value/>

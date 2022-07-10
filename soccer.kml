@@ -2,42 +2,42 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>soccer</name>
-    <Style id="poly-9C27B0-16000-0-normal">
+    <Style id="poly-9C27B0-12300-255-normal">
       <LineStyle>
         <color>ffb0279c</color>
-        <width>16</width>
+        <width>12.3</width>
       </LineStyle>
       <PolyStyle>
-        <color>00b0279c</color>
+        <color>ffb0279c</color>
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <Style id="poly-9C27B0-16000-0-highlight">
+    <Style id="poly-9C27B0-12300-255-highlight">
       <LineStyle>
         <color>ffb0279c</color>
-        <width>24</width>
+        <width>18.45</width>
       </LineStyle>
       <PolyStyle>
-        <color>00b0279c</color>
+        <color>ffb0279c</color>
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <StyleMap id="poly-9C27B0-16000-0">
+    <StyleMap id="poly-9C27B0-12300-255">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-9C27B0-16000-0-normal</styleUrl>
+        <styleUrl>#poly-9C27B0-12300-255-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-9C27B0-16000-0-highlight</styleUrl>
+        <styleUrl>#poly-9C27B0-12300-255-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Placemark>
       <name>Soccer</name>
       <description><![CDATA[description: <br>fillColor: #7B1FA2<br>stroke: #7B1FA2<br>color: #7B1FA2<br>weight: 2<br>opacity: 0.8<br>dashArray: <br>fillOpacity: 0.35]]></description>
-      <styleUrl>#poly-9C27B0-16000-0</styleUrl>
+      <styleUrl>#poly-9C27B0-12300-255</styleUrl>
       <ExtendedData>
         <Data name="description">
           <value/>

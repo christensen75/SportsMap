@@ -2,42 +2,42 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>baseball</name>
-    <Style id="poly-E65100-3701-0-normal">
+    <Style id="poly-E65100-1-255-normal">
       <LineStyle>
         <color>ff0051e6</color>
-        <width>3.701</width>
+        <width>0.001</width>
       </LineStyle>
       <PolyStyle>
-        <color>000051e6</color>
+        <color>ff0051e6</color>
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <Style id="poly-E65100-3701-0-highlight">
+    <Style id="poly-E65100-1-255-highlight">
       <LineStyle>
         <color>ff0051e6</color>
-        <width>5.5515</width>
+        <width>0.0015</width>
       </LineStyle>
       <PolyStyle>
-        <color>000051e6</color>
+        <color>ff0051e6</color>
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <StyleMap id="poly-E65100-3701-0">
+    <StyleMap id="poly-E65100-1-255">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-E65100-3701-0-normal</styleUrl>
+        <styleUrl>#poly-E65100-1-255-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-E65100-3701-0-highlight</styleUrl>
+        <styleUrl>#poly-E65100-1-255-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Placemark>
       <name>Baseball</name>
       <description><![CDATA[description: <br>fillColor: #b71c1c<br>stroke: #b71c1c<br>color: #b71c1c<br>weight: 2<br>opacity: 0.8<br>fillOpacity: 0.35]]></description>
-      <styleUrl>#poly-E65100-3701-0</styleUrl>
+      <styleUrl>#poly-E65100-1-255</styleUrl>
       <ExtendedData>
         <Data name="description">
           <value/>

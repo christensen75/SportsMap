@@ -2,42 +2,42 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>football</name>
-    <Style id="poly-097138-11100-0-normal">
+    <Style id="poly-097138-8200-255-normal">
       <LineStyle>
         <color>ff387109</color>
-        <width>11.1</width>
+        <width>8.2</width>
       </LineStyle>
       <PolyStyle>
-        <color>00387109</color>
+        <color>ff387109</color>
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <Style id="poly-097138-11100-0-highlight">
+    <Style id="poly-097138-8200-255-highlight">
       <LineStyle>
         <color>ff387109</color>
-        <width>16.65</width>
+        <width>12.3</width>
       </LineStyle>
       <PolyStyle>
-        <color>00387109</color>
+        <color>ff387109</color>
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <StyleMap id="poly-097138-11100-0">
+    <StyleMap id="poly-097138-8200-255">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-097138-11100-0-normal</styleUrl>
+        <styleUrl>#poly-097138-8200-255-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-097138-11100-0-highlight</styleUrl>
+        <styleUrl>#poly-097138-8200-255-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Placemark>
       <name>Football</name>
       <description><![CDATA[description: <br>fillColor: #00796B<br>stroke: #00796B<br>color: #00796B<br>weight: 2<br>opacity: 0.8<br>fillOpacity: 0.35]]></description>
-      <styleUrl>#poly-097138-11100-0</styleUrl>
+      <styleUrl>#poly-097138-8200-255</styleUrl>
       <ExtendedData>
         <Data name="description">
           <value/>
