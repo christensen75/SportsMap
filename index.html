@@ -1,46 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Major League Sports Markets 4</title>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Major Sports Markets</title>
     <style>
-      #map_canvas {
-        width: 1920px;
-        height: 1080px;
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
       }
     </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: {lat: 40, lng: -97}
+        });
 
-</head>
-<body>
-<div id="map_canvas"></div>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUZggZEn9MOpftH_WjCsrH-rU1El2gJ0A"></script>
-<script>
-
-
-var map;
-var src = '/sports.kmz';
-
-
-function initialize() {
-  map = new google.maps.Map(document.getElementById('map_canvas'), {
-    center: new google.maps.LatLng(40,-97),
-    zoom: 4,
-    mapTypeId: google.maps.MapTypeId.TERRAIN
-  });
-  loadKmlLayer(src, map);
-}
-
-function loadKmlLayer(src, map) {
-let kml = new google.maps.KmlLayer({
-  url: src,
-  preserveViewport: true
-});
-kml.setMap( map );
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-</script>
-
-</body>
+        var georssLayer = new google.maps.KmlLayer({
+          url: 'http://api.flickr.com/services/feeds/geo/?g=322338@N20&lang=en-us&format=feed-georss'
+        });
+        georssLayer.setMap(map);
+      }
+    </script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUZggZEn9MOpftH_WjCsrH-rU1El2gJ0A&callback=initMap">
+    </script>
+  </body>
 </html>
