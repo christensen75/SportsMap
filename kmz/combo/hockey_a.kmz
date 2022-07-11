@@ -1,0 +1,35 @@
+<kml>
+  <Document>
+    
+    <NetworkLink>
+    <Link>
+     <href>kmz/hockey.kmz</href>
+    </Link>
+   </NetworkLink>
+    
+    <NetworkLink>
+    <Link>
+     <href>kmz/soccer_gray.kmz</href>
+    </Link>
+   </NetworkLink>
+
+   <NetworkLink>
+    <Link>
+     <href>kmz/football_gray.kmz</href>
+    </Link>
+   </NetworkLink>
+    
+    <NetworkLink>
+    <Link>
+     <href>kmz/basketball_gray.kmz</href>
+    </Link>
+   </NetworkLink>
+    
+    <NetworkLink>
+    <Link>
+     <href>kmz/baseball_gray.kmz</href>
+    </Link>
+   </NetworkLink>
+
+  </Document>
+</kml>
