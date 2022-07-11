@@ -3,31 +3,31 @@
     
     <NetworkLink>
     <Link>
-     <href>baseball.kml</href>
+     <href>kmz/hockey.kmz</href>
     </Link>
    </NetworkLink>
     
     <NetworkLink>
     <Link>
-     <href>basketball.kml</href>
+     <href>kmz/soccer.kmz</href>
     </Link>
    </NetworkLink>
 
    <NetworkLink>
     <Link>
-     <href>football.kml</href>
+     <href>kmz/football.kmz</href>
     </Link>
    </NetworkLink>
     
     <NetworkLink>
     <Link>
-     <href>soccer.kml</href>
+     <href>kmz/soccer.kmz</href>
     </Link>
    </NetworkLink>
     
     <NetworkLink>
     <Link>
-     <href>hockey.kml</href>
+     <href>kmz/hockey.kmz</href>
     </Link>
    </NetworkLink>
 
