@@ -3,13 +3,13 @@
     
     <NetworkLink>
     <Link>
-     <href>https://christensen75.github.io/SportsMap/kml/hockey.kml</href>
+     <href>https://christensen75.github.io/SportsMap/kml/baseball.kml</href>
     </Link>
    </NetworkLink>
     
     <NetworkLink>
     <Link>
-     <href>https://christensen75.github.io/SportsMap/kml/soccer.kml</href>
+     <href>https://christensen75.github.io/SportsMap/kml/basketball.kml</href>
     </Link>
    </NetworkLink>
 
@@ -21,13 +21,13 @@
     
     <NetworkLink>
     <Link>
-     <href>https://christensen75.github.io/SportsMap/kml/basketball.kml</href>
+     <href>https://christensen75.github.io/SportsMap/kml/soccer.kml</href>
     </Link>
    </NetworkLink>
     
     <NetworkLink>
     <Link>
-     <href>https://christensen75.github.io/SportsMap/kml/baseball.kml</href>
+     <href>https://christensen75.github.io/SportsMap/kml/hockey.kml</href>
     </Link>
    </NetworkLink>
 
