@@ -3,25 +3,25 @@
     
     <NetworkLink>
     <Link>
-     <href>https://christensen75.github.io/SportsMap/kmz/baseball_gray.kmz</href>
+     <href>https://christensen75.github.io/SportsMap/kmz/baseball_black.kmz</href>
     </Link>
    </NetworkLink>
     
     <NetworkLink>
     <Link>
-     <href>https://christensen75.github.io/SportsMap/kmz/hockey_gray.kmz</href>
+     <href>https://christensen75.github.io/SportsMap/kmz/hockey_black.kmz</href>
     </Link>
    </NetworkLink>
 
    <NetworkLink>
     <Link>
-     <href>https://christensen75.github.io/SportsMap/kmz/soccer_gray.kmz</href>
+     <href>https://christensen75.github.io/SportsMap/kmz/soccer_black.kmz</href>
     </Link>
    </NetworkLink>
     
     <NetworkLink>
     <Link>
-     <href>https://christensen75.github.io/SportsMap/kmz/football_gray.kmz</href>
+     <href>https://christensen75.github.io/SportsMap/kmz/football_black.kmz</href>
     </Link>
    </NetworkLink>
     
