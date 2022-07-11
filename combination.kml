@@ -21,13 +21,13 @@
     
     <NetworkLink>
     <Link>
-     <href>kmz/soccer.kmz</href>
+     <href>kmz/basketball.kmz</href>
     </Link>
    </NetworkLink>
     
     <NetworkLink>
     <Link>
-     <href>kmz/hockey.kmz</href>
+     <href>kmz/baseball.kmz</href>
     </Link>
    </NetworkLink>
 
