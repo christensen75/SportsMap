@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Cairo</title>
+    <style>
+      #map_canvas {
+        height: 1000px;
+	  width: 1700px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map_canvas"></div>
+    <script>
+      function initMap() {
+    var myOptions = {
+        zoom: 6,
+        center: {lat: 30.04, lng: 31.24}, // latlng,
+                  disableDefaultUI: true,
+          styles: [
+    {"featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{"visibility": "off"}]},
+    {"featureType": "all", "elementType": "labels", "stylers": [{"visibility": "off"}]}
+]
+    };
+    map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+    var mapLabel = new MapLabel({
+        text: 'Test',
+        position: {lat: 30.04, lng: 31.24},
+        map: map,
+        fontSize: 35,
+        align: 'right'
+    });
+
+}
+
+    </script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUZggZEn9MOpftH_WjCsrH-rU1El2gJ0A&callback=initMap">
+    </script>
+  </body>
+</html>
